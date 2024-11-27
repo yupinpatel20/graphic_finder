@@ -1,0 +1,99 @@
+/* .design-page styling */
+.design-page {
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Allows absolute positioning of child elements */
+  }
+  
+  /* Styling for the back arrow */
+  .back-arrow {
+    position: absolute; /* Position the back arrow absolutely within .design-page */
+    top: 10px;
+    left: 20px; /* Align it to the left side */
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .back-arrow:hover {
+    color: #4CAF50;
+  }
+  
+  /* Logo gallery styling */
+  .logo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px; /* Increase margin-top to prevent overlap with back arrow */
+  }
+  
+  /* Styling for each logo container */
+  .logo-container {
+    width: 200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .logo-image {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .action-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+  }
+  
+  /* Initial state for the like icon (white color) */
+  .like-icon {
+    cursor: pointer;
+    color: white; /* Initial heart color is white */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* When the heart is liked, change its color to red */
+  .like-icon.liked {
+    color: red; /* Change heart color to red when liked */
+  }
+  
+  /* Hover effects for like and chat icons */
+  .like-icon:hover,
+  .chat-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Styling for chat icon */
+  .chat-icon {
+    cursor: pointer;
+    color: #333; /* Default chat icon color */
+    transition: transform 0.3s ease;
+  }
+  
